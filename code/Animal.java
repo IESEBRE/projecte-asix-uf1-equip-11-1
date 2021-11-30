@@ -60,11 +60,11 @@ public class Animal {
                     else if (joc == 'c')
                         System.out.println("Ben triat");
                     else
-                        System.out.println("No es un joc!");
+                        System.out.println("Introdueix la lletra correcta");
                     break;
                 case "3":
                     Scanner car = new Scanner(System.in);
-                    System.out.println("Tria el teu caracter favorit:");
+                    System.out.println("Tria quin es el teu caracter preferit ");
                     caracter = car.next().charAt(0);
                     char iterador = 'a';
                     char counter = (char) (((caracter - 'a') / 2));
@@ -81,7 +81,7 @@ public class Animal {
 
                 case "5":
                     Scanner ono = new Scanner(System.in);
-                    Random r = new Random();
+                    Random w = new Random();
                     System.out.println("Tria un caracter per formar una onomatopeia: ");
                     int numloop = 0;
 
@@ -89,7 +89,7 @@ public class Animal {
                     while (numloop != 5) {
                         char variable1 = ono.next().charAt(0);
                         System.out.println("TU:" + variable1);
-                        char variable2 = (char) (r.nextInt(26) + 'a');
+                        char variable2 = (char) (w.nextInt(26) + 'a');
                         System.out.println("ELL: " + variable2);
                         char variable3 = ono.next().charAt(0);
                         System.out.println("TU: " + variable3);
@@ -101,11 +101,11 @@ public class Animal {
                         }
                         else
                             System.out.println("La combinació " + str + " no es una onomatopeia");
-                        char variable4 = (char) (r.nextInt(26) + 'a');
+                        char variable4 = (char) (w.nextInt(26) + 'a');
                         System.out.println("ELL: " + variable4);
                         char variable5 = ono.next().charAt(0);
                         System.out.println("TU: " + variable5);
-                        char variable6 = (char) (r.nextInt(26) + 'a');
+                        char variable6 = (char) (w.nextInt(26) + 'a');
                         System.out.println("ELL: " + variable6);
                         String str2 = new StringBuilder().append(variable4).append(variable5).append(variable6).toString();
                         char vocal2 = str2.charAt(1);
@@ -123,7 +123,7 @@ public class Animal {
                     Scanner nm = new Scanner(System.in);
                     String nom;
                     nom = nm.nextLine();
-                    System.out.println(nom + "Bon nom");
+                    System.out.println(nom + " Bon nom");
                     break;
                 case "7":
                     System.out.println(animal);
